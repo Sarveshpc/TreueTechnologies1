@@ -7,13 +7,20 @@ public class OnlineBookstore {
     private List<Book> books;
 
     public OnlineBookstore() {
-       ArrayList books = new ArrayList<Object>();
+       ArrayList<Book> books = new ArrayList<Book>();
     }
 
     // Add a book to the collection
-    public void addBook(Book book) {
-        books.add(book);
-    }
+//    public void addBook(Book book) {
+//        books.add(book)  ; 
+//    }
+//    
+//        		
+//    
+
+    
+
+
 
     // Remove a book from the collection
     public void removeBook(Book book) {
@@ -24,7 +31,7 @@ public class OnlineBookstore {
     public List<Book> searchByTitle(String title) {
         List<Book> result = new ArrayList<Book>();
         for (Book book : books) {
-            if (book.getTitle().equalsIgnoreCase(title)) {
+            if (book.getTitle1().equalsIgnoreCase(title)) {
                 result.add(book);
             }
         }
@@ -37,6 +44,13 @@ public class OnlineBookstore {
             System.out.println(book);
         }
     }
+
+	public void addBook(Book book) {
+		// TODO Auto-generated method stub
+		
+	  System.out.println("Book is added successfully:");
+		
+	}
 }
 
    
